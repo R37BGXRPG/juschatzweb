@@ -6,13 +6,11 @@ import {
 } from 'firebase/auth'
 import {
   collection, query, where, onSnapshot, orderBy, doc, addDoc,
-  serverTimestamp, getDoc, setDoc, updateDoc, writeBatch, arrayUnion,
-  getDocs, limit, startAt, endAt
+  serverTimestamp, getDoc, setDoc, updateDoc, getDocs, limit
 } from 'firebase/firestore'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 const APP_VERSION = "v1.0.1-1b"
-const APP_CODENAME = "Straw"
 
 // --- Global State ---
 let currentTheme = localStorage.getItem('jus-theme') || 'purple'
