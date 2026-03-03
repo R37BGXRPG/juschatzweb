@@ -55,7 +55,7 @@ function renderAuth(isSignup: boolean) {
   applyTheme()
   app.innerHTML = `
     <div class="auth-container fade-in">
-      <img src="/logo.png" alt="JusChatz Logo" class="logo">
+      <img src="./logo.png" alt="JusChatz Logo" class="logo">
       <h1 style="font-size: 2.5rem; margin-bottom: 30px; color: var(--primary); font-weight:800; font-family: var(--font-titles);">JusChatz</h1>
       <div class="glass" style="width: 100%; max-width: 400px; padding: 40px; border-radius: 28px; display: flex; flex-direction: column; gap: 16px;">
         <h2 style="text-align:center; margin-bottom:10px;">${isSignup ? 'Create Account' : 'Welcome Back'}</h2>
@@ -108,7 +108,7 @@ async function renderDashboard(user: any) {
       <div class="glass" style="width: 380px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; background: var(--background);">
         <div style="padding: 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.03);">
           <div style="display: flex; align-items: center; gap: 12px;">
-            <img src="/logo.png" style="width: 34px; height: 34px;">
+            <img src="./logo.png" style="width: 34px; height: 34px;">
             <h2 style="font-size: 1.25rem; font-family: var(--font-titles);">JusChatz</h2>
           </div>
           <div style="display: flex; gap: 8px;">
@@ -128,7 +128,7 @@ async function renderDashboard(user: any) {
       </div>
       <div id="chat-area" style="flex: 1; display: flex; flex-direction: column; background: var(--background);">
         <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0.1;">
-          <img src="/logo.png" style="width:120px; filter:grayscale(1);">
+          <img src="./logo.png" style="width:120px; filter:grayscale(1);">
           <h3 style="font-family: var(--font-titles);">JusChatz Web</h3>
         </div>
       </div>
