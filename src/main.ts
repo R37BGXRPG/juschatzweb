@@ -1,8 +1,7 @@
 import './style.css'
 import { auth, db } from './firebase'
-import {
-  onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword,
-  updateProfile, signOut
+onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword,
+  signOut
 } from 'firebase/auth'
 import {
   collection, query, where, onSnapshot, orderBy, doc, addDoc,
